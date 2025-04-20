@@ -1,0 +1,599 @@
+/* Global CSS styles */
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Footer.css */
+
+.footer {
+    background-color: #1f2937;
+    color: white;
+    padding: 1rem 1.5rem;
+    position: fixed;      
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.footer-btn {
+    position: relative;
+    background-color: #2d6cdf;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.footer-btn:hover {
+    background-color: #2563eb;
+}
+
+.logout-btn {
+    background-color: #ff0000;
+}
+
+@media (max-width: 100px) {
+    .footer-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.6rem;
+    }
+
+    .footer-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Header.css */
+
+.header {
+    background-color: #1f2937;
+    color: white;
+    padding: 1rem 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.header-logo-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.header-logo {
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.header-controls {
+    margin-bottom: 1.5rem;
+}
+
+.header-user-center {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 1.00rem;
+    color: #e5e7eb;
+}
+
+@media (max-width: 100px) {
+    .header-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.6rem;
+    }
+
+    .header-logo-center {
+        justify-content: center;
+    }
+
+    .header-user-center {
+        margin-top: 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* CreateCircular.css */
+
+.create-circular-page {
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.create-circular-page h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: #374151;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    background-color: #f9fafb;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #3b82f6;
+    outline: none;
+    background-color: #fff;
+}
+
+button[type="submit"] {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #1d4ed8;
+}
+
+p {
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .create-circular-page {
+        padding: 1rem;
+    }
+
+    form input,
+    form textarea {
+        font-size: 0.95rem;
+    }
+
+    button[type="submit"] {
+        font-size: 0.95rem;
+    }
+}
+
+/* RegisterPage.css */
+
+.register-page {
+    max-width: 420px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    font-family: "Segoe UI", sans-serif;
+    color: #333;
+}
+
+.register-page h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    color: #2c3e50;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.register-form input {
+    padding: 0.65rem 0.9rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+.register-form input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.register-form button {
+    background-color: #2d6cdf;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.register-form button:hover {
+    background-color: #1f4fb2;
+}
+
+.register-form .error {
+    color: red;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 480px) {
+    .register-page {
+        margin: 1.2rem;
+        padding: 1.5rem;
+    }
+
+    .register-page h2 {
+        font-size: 1.5rem;
+    }
+
+    .register-form input,
+    .register-form button {
+        font-size: 0.95rem;
+    }
+}
+
+/* LoginPage.css */
+
+.login-page {
+    max-width: 400px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    font-family: "Segoe UI", sans-serif;
+    color: #2c3e50;
+}
+
+.login-page h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #34495e;
+}
+
+.login-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.login-page label {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    display: block;
+}
+
+.login-page input {
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+}
+
+.login-page input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.login-page button {
+    background-color: #2d6cdf;
+    color: #fff;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.login-page button:hover {
+    background-color: #1f4fb2;
+}
+
+.login-page a {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    color: #2d6cdf;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.login-page a:hover {
+    text-decoration: underline;
+}
+
+.login-page p {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: red;
+}
+
+@media (max-width: 480px) {
+    .login-page {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .login-page h2 {
+        font-size: 1.5rem;
+    }
+
+    .login-page button {
+        font-size: 0.95rem;
+    }
+
+    .login-page input {
+        font-size: 0.95rem;
+    }
+}
+
+/* UserDashboard.css */
+
+.user-dashboard {
+    padding: 1rem;
+    max-width: 900px;
+    margin: auto;
+    font-family: 'Segoe UI', sans-serif;
+    color: #2c3e50;
+}
+
+.user-dashboard h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.user-dashboard h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #34495e;
+}
+
+.circular-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.circular-card {
+    background-color: #f4f6f8;
+    padding: 1.2rem;
+    border-left: 5px solid #2980b9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    transition: box-shadow 0.3s ease;
+}
+
+.circular-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.circular-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+}
+
+.circular-card p {
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    color: #2c3e50;
+}
+
+.circular-card small {
+    display: block;
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    margin-bottom: 0.8rem;
+}
+
+.circular-card button {
+    background-color: #2d6cdf;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.circular-card button:hover {
+    background-color: #1e4eb8;
+}
+
+.circular-card span {
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+    .user-dashboard h2 {
+        font-size: 1.5rem;
+    }
+
+    .user-dashboard h3 {
+        font-size: 1.1rem;
+    }
+
+    .circular-card {
+        padding: 1rem;
+    }
+
+    .circular-card h4 {
+        font-size: 1rem;
+    }
+
+    .circular-card button {
+        width: 100%;
+        font-size: 0.95rem;
+    }
+
+    .circular-card span {
+        display: inline-block;
+        margin-top: 0.5rem;
+    }
+}
+
+/* AdminDashboard.css */
+
+.admin-dashboard {
+    padding: 1rem;
+    max-width: 900px;
+    margin: auto;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.admin-dashboard h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.admin-dashboard a {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 2rem auto;
+    padding: 0.6rem 1.2rem;
+    background-color: #2d6cdf;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.admin-dashboard a:hover {
+    background-color: #1e4eb8;
+}
+
+.circular-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.circular-card {
+    border: 1px solid #ccc;
+    border-left: 5px solid #2d6cdf;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s ease;
+}
+
+.circular-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.circular-card h3 {
+    margin-bottom: 0.5rem;
+    color: #34495e;
+}
+
+.circular-card p {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.circular-card small {
+    color: #777;
+    font-size: 0.85rem;
+}
+
+details {
+    margin-top: 0.75rem;
+}
+
+details summary {
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+details ul {
+    margin-top: 0.5rem;
+    padding-left: 1.2rem;
+    font-size: 0.9rem;
+    color: #2d3436;
+}
+
+details ul li {
+    list-style: disc;
+    margin-bottom: 0.3rem;
+}
+
+@media (max-width: 600px) {
+    .admin-dashboard h1 {
+        font-size: 1.5rem;
+    }
+
+    .circular-card {
+        padding: 0.75rem;
+    }
+
+    .admin-dashboard a {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
